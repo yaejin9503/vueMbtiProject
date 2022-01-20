@@ -8,23 +8,23 @@
     <Button text="테스트 시작" :clickEvent="startTest" />
   </main>
   <!--퀴즈 페이지-->
-  <main v-else-if="page < 5">
+  <main v-else>
     <Question/>
   </main>
   </template>
 
 <script>
-export default {
-  name: 'Intro', 
-  computed: {
-    page(){ 
-      return this.$store.state.page
-    }
-  },
-  methods: { 
-    startTest(){ 
-      this.$store.commit('NEXT_PAGE', 1); 
+  export default {
+    name: 'Intro', 
+    computed: {
+      page(){ 
+        return this.$store.state.page
+      }
+    },
+    methods: { 
+      startTest(){ 
+        this.$store.commit('NEXT_PAGE', 1); 
+      }
     }
   }
-}
 </script>

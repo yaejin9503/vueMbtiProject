@@ -57,8 +57,8 @@ export const state = {
     ],
     resultMbti: {
         esfj: {
-            img: "", 
-            title: "", 
+            img: "/img/esfj.jpg", 
+            title: "마이펫의 이중 생활 토끼", 
             description: "마크 사랑단<br/>ddd"
         }
     },
